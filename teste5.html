@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Uma Página Simples.</title>
+</head>
+
+<body>
+<h1>Bem-vindo à minha página simples.</h1>
+
+<p>Ordenada</p>
+<ol>
+	<li>Primeiro item</li>
+	<li>Segunto item</li>
+</ol>
+
+<p>Não Ordenada</p>
+<ul>
+	<li>Vermelho</li>
+	<li>Azul</li>
+</ul>
+
+<dl>
+	<dt><b>Item da lista não ordenada.</b></dt>
+	<dd>Descrição do intem da lista</dd>
+</dl>
+
+<p><i>Este texto está em formato itálico.</i></p>
+
+<p>Podemos modificar o conteúdo!</p>
+
+<video src= “https://www.youtube.com/watch?v=W3lA_fDl50o” controle></video>
+<audio src= “/audios/sample.ogg” controls autoplay loop></audio>
+
+<table>
+	<tr>
+		<th>Itens</th>
+		<th>Quantidade</th>
+		<th>Total</th>
+	</tr>
+
+	<tr>
+		<td>Registro 01</td>
+		<td>3</td>
+		<td>R$30</td>
+
+	</tr>
+
+	<tr>
+		<td>Registro 02</td>
+		<td>2</td>
+		<td>$30</td>
+	</tr>
+</table>
+<h2>Tabela com Título</h2>
+<table>
+
+	<tr>
+		<td>Smith</td>
+		<td>HTML</td>
+		<td>9</td>
+	</tr>
+
+	<tr>
+		<td>Sunday</td>
+		<td>JavaScript</td>
+		<td>10</td>
+</table>
+
+<h2>Tabela com Cabeçalho e Rodapé</h2>
+<table width="100%" border="1">
+	<thead>
+
+	<tr>
+		<th>Mês</th>
+		<th>Horas/Aula</th>
+	</tr> <tbody> </tr>
+
+		<td>Junho</td>
+		<td>50</td>
+	</tr>
+	<tr>
+		<td>Julho</td>
+		<td>50</td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>Total</th>
+			<th>100</th>
+		</tr>
+	</tfoot>	
+</table>
+	
+
+<!-- Tabela com Colspan -->
+<h2>Tabela simples</h2>
+
+	<table width="100%" border="1">
+		<tr>
+			<td>Aluno</td>
+			<td colspan="2">Disciplina</td>
+		</tr>
+		<tr> 
+			<td>Alex</td>
+			<td>HTML</td>
+			<td>Ambiemte WEB</td>
+		</tr>
+	</table>
+
+<!-- Tabela com Rowspan -->
+<h2>Tabela Simples</h2>
+	
+	<table width="100%" border="1">
+		<tr>
+			<td>Aluno</td>
+
+			<td rowspan="2">Disciplina</td>
+		</tr>
+		<tr>
+			<td>Alex</td>
+			<td>HTML</td>
+			<td>Ambiente WEB</td>
+		</tr>
+	</table>
+
+<h2>Formulário</h2>
+
+<form action="/pagina-processa-dados-do-form" method="post">
+
+	<fieldset>
+		<legend>Dados Gerais</legend>
+		<label for="nome">Nome:</label>
+		<input type="text" minlength="3" id="nome" />
+		<label for="data_nascimento">Data de Nascimento:</label>
+		<input type="text" id="data_nascimento" />
+		<label for="cpf">CPF:</label>
+		<input type="cpf" minlength="11" id="cpf" />
+	</fieldset>
+	<fieldset>
+		<legend>Endereço</legend>
+
+		<label for="tipo_endereco">Tipo</label>
+		<select id="tipo_endereco">
+			<option value="">Selecione</option>
+			<option value="">Rua</option>
+			<option value="">Estrada</option>
+			<option value="">Rodovia</option>
+			<option value="">Outros</option>
+		</select>
+		<label for="logradouro">Logradouro:</label>
+		<input type="text" id="logradouro_endereco" />
+		<label for="numero_endereco">Número:</label>
+		<input type="text" id="numero endereco" />
+		<label for="complemento_endereco">Complemento:</label>
+		<input type="text" id="complemento_endereco" />
+	</fieldset>
+	<fieldset>
+		<legend>Fale Conosco</legend>
+		<label for="msg">Mensagem:</label>
+		<textarea type="text" id="msg"> 
+		</textarea>
+	</fieldset>
+	<fieldset>
+		<button type="submit">Enviar sua mensagem</button>
+		<button type="reset">Limpar o Formulário</button>
+	</fieldset>
+</form>
+
+
+</body>
+</html>
